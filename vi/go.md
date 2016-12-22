@@ -2,13 +2,10 @@
 
 ## Quyền tác giả
 
-The Little Go Book sử dụng bản quyền Attribution-NonCommercial-ShareAlike 4.0 International license. Bạn không cần trả tiền để mua quyển sách này.
-
-Bạn được tự do sao chép, phát hành, chỉnh sửa hoặc hiển thị nội dung cuốn sách. Tuy nhiên, tôi yêu cầu bạn để tên tác giả, Karl Seguin, và không sử dụng cho mục đích thương mại.
-
-Bạn có thể đọc toàn bộ nội dung của bản quyền tại địa chỉ này:
-
-<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+Bản quyền của The Little Go Book: Attribution-NonCommercial-ShareAlike 4.0 International license. Bạn không cần trả tiền để mua quyển sách này.
+Bạn được phép sao chép, phát hành, chỉnh sửa hoặc hiển thị nội dung cuốn sách. Tuy nhiên, bạn hãy để tên tác giả, Karl Seguin, không sử dụng cho mục đích thương mại.
+Bạn có thể đọc toàn bộ nội dung của bản quyền tại địa chỉ:
+<https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 ## Phiên bản mới nhất
 
@@ -16,19 +13,19 @@ Phên bản mới nhất của sách có thể đọc tại đây:
 <http://github.com/karlseguin/the-little-go-book>
 
 # Giới thiệu
-Tôi luôn quan tâm tới thích - không thích khi nói đến việc học ngôn ngữ mới. Một mặt, ngôn ngữ rất gần với những gì chúng ta làm, ngay cả những thay đổi nhỏ có thể có tác động nhìn thấy được. Một thay đổi nhỏ sẽ ảnh hưởng tới cách bạn lập trình và cách bạn suy nghĩ trong các ngôn ngữ khác. Ngôn ngữ mới được cài tiến. Học từ khoá mới, hệ thống kiểu, phong cách viết mã cũng như các thư viện mới, các cộng đồng và mô hình được xem là một công việc không nhỏ. So với tất cả mọi thứ khác chúng ta phải học, học ngôn ngữ mới thường được xem là một đầu tư tốn kém về mặt thời gian.
+Tôi quan tâm việc học ngôn ngữ mới. Một mặt, ngôn ngữ rất gần với những gì chúng ta làm, ngay cả những thay đổi nhỏ có thể có tác động nhìn thấy được. Một thay đổi nhỏ sẽ ảnh hưởng tới cách bạn lập trình và cách bạn suy nghĩ trong các ngôn ngữ khác. Ngôn ngữ mới được cài tiến. Học từ khoá mới, hệ thống kiểu dữ liệu, phong cách viết mã cũng như các thư viện mới, các cộng đồng và mô hình được xem là một công việc không nhỏ. So với tất cả mọi thứ khác chúng ta phải học, học ngôn ngữ mới thường được xem là rất mất thời gian.
 
 Do đó, chúng ta *phải* cố gắng. Chúng ta *phải* sẵn sàng để thực hiện các bước thay đổi vì, một lần nữa, ngôn ngữ là nền tảng của những gì chúng ta làm. Mặc dù những thay đổi này thường tăng thêm. Chúng có xu hướng tác động tới phạm vi rộng và chúng ảnh hưởng đến năng suất, khả năng đọc, hiệu suất, khả năng kiểm thử, quản lý phụ thuộc, xử lý lỗi, tài liệu, hồ sơ, cộng đồng phát triển, thư viện chuẩn, ... Nói theo cách tích cực *death by a thousand cuts*? (Người dịch: Đây là tên của một cuốn sách).
 
-Chúng ta có một câu hỏi quan trọng: **Vì sao lại chọn Go?** Đối với tôi, có hai lý do hấp dẫn. Việc đầu tiên là nó là một ngôn ngữ khá đơn giản với một thư viện tiêu chuẩn. Cải tiến của Go là đơn giản hóa những thứ phức tạp được thêm vào ngôn ngữ lập trình trong vài thập kỷ gần đây. Lý do khác là đối với nhiều nhà phát triển, nó sẽ bổ sung cho kho công cụ hiện có.
+Chúng ta có một câu hỏi quan trọng: **Vì sao chọn Go?** Đối với tôi, có hai lý do hấp dẫn. Việc đầu tiên là nó là một ngôn ngữ khá đơn giản với một thư viện tiêu chuẩn. Cải tiến của Go là đơn giản hóa những thứ phức tạp được thêm vào ngôn ngữ lập trình trong vài thập kỷ gần đây. Lý do khác là đối với nhiều nhà phát triển, nó sẽ bổ sung cho kho công cụ hiện có.
 
-Go được xây dựng như một ngôn ngữ  lập trình hệ thống (ví dụ, hệ điều hành, trình điều khiển thiết bị) và do đó nó hướng tới các lập trình viên quen với C và C++. Theo nhóm phát triển Go, điều mà tôi tin là đúng, chính các nhà phát triển ứng dụng, không phải người phát triển hệ thống, trở thành những người sử dụng Go chủ yếu. Tại sao? Tôi không thể nói thay cho các nhà phát triển hệ thống, nhưng đối với những người trong chúng ta xây dựng trang web, dịch vụ, các ứng dụng máy tính để bàn, các nhu cầu mới xuất hiện cho một lớp của các hệ thống mà đứng ở giữa các ứng dụng hệ thống cấp thấp và ứng dụng cấp cao hơn.
+Go được xây dựng như một ngôn ngữ lập trình hệ thống (ví dụ, hệ điều hành, trình điều khiển thiết bị) và do đó nó hướng tới các lập trình viên quen với C và C++. Theo nhóm phát triển Go, không phải người phát triển hệ thống mà là các nhà phát triển ứng dụng sẽ trở thành những người sử dụng Go chủ yếu. Tại sao? Tôi không thể nói thay cho các nhà phát triển hệ thống, nhưng đối với những người xây dựng trang web, dịch vụ, các ứng dụng máy tính để bàn, các nhu cầu mới xuất hiện cho một lớp của các hệ thống mà đứng ở giữa các ứng dụng hệ thống cấp thấp và ứng dụng cấp cao hơn.
 
-Có thể đó là hệ thống nhắn tin, bộ đệm, phân tích dữ liệu tính toán lớn, chương trình dòng lệnh, ghi log hoặc giám sát. Tôi không biết các cách khác nhau để đặt tên cho nó, nhưng trong quá trình làm việc của tôi, các hệ thống ngày càng trở nên phức tạp và phải phục vụ nhiều hoạt động đồng thời, việc cấp phát tài nguyên cho nhu cầu mở rộng hệ thống tăng lên. Bạn *có thể* xây dựng hệ thống như vậy với Ruby hay Python hay thứ gì khác (nhiều người làm thế), nhưng các loại hệ thống này có thể được hưởng lợi từ một hệ thống kiên cố hơn và hiệu suất cao hơn. Tương tự như vậy, bạn *có thể* sử dụng Go để xây dựng các trang web (nhiều người chọn cách này), nhưng tôi vẫn thích, Node hay Ruby cho hệ thống như vậy.
+Có thể đó là hệ thống nhắn tin, caching, phân tích dữ liệu tính toán lớn, chương trình dòng lệnh, ghi log hoặc giám sát. Tôi không biết các cách khác nhau để đặt tên cho nó, nhưng trong quá trình làm việc của tôi, các hệ thống ngày càng trở nên phức tạp và phải phục vụ nhiều hoạt động đồng thời, việc cấp phát tài nguyên cho nhu cầu mở rộng hệ thống tăng lên. Bạn *có thể* xây dựng hệ thống như vậy với Ruby hay Python hay thứ gì khác (nhiều người làm thế), nhưng các loại hệ thống này có thể được hưởng lợi từ một hệ thống kiên cố hơn và hiệu suất cao hơn. Tương tự như vậy, bạn *có thể* sử dụng Go để xây dựng các trang web (nhiều người chọn cách này), nhưng tôi vẫn thích, Node hay Ruby cho hệ thống như vậy.
 
 Có những lĩnh vực mà Go tỏ ra vượt trội. Ví dụ, một chương trình Go sẽ không cần thư viện đi kèm. Bạn không cần phải lo lắng nếu người dùng của bạn đã cài đặt Ruby hoặc JVM hoặc quan tâm tới phiên bản của chúng. Vì lý do này, Go ngày càng trở nên phổ biến như là một ngôn ngữ cho chương trình giao diện dòng lệnh và các loại chương trình khác bạn cần triển khai (ví dụ, một chương trình thu thập log).
 
-Rõ ràng, học Go là một phương án hợp lý. Bạn sẽ không phải mất nhiều giờ học hoặc thậm chí làm chủ Go, và bạn sẽ đạt được kết quả thiết thực.
+Rõ ràng, học Go là một phương án hợp lý. Bạn sẽ không phải mất nhiều giờ học hoặc và làm chủ Go, và bạn sẽ đạt được kết quả thiết thực.
 
 ## Lưu ý của tác giả
 
@@ -36,19 +33,17 @@ Tôi đã lưỡng lự khi viết quyển sách này vì vài lý do. Đầu ti
 
 Một cản trở khác là sự khó chịu của tôi lúc viết một cuốn sách về một ngôn ngữ lập trình. Khi tôi viết The Little MongoDB Book, tôi đã giả định rằng hầu hết người đọc hiểu những điều cơ bản của cơ sở dữ liệu quan hệ và mô hình hóa. Với The Little Redis Book, có thể giả định bạn đã quen với lưu và đọc dữ liệu từ một khóa.
 
-Khi tôi bắt đầu viết các đoạn và các chương đầu tiên, tôi biết rằng tôi sẽ không thể  giả định tương tự thế. Cần bao nhiêu thời gian để mô tả về interface cho các độc giả về khái niệm này, trong khi những người khác sẽ chỉ cần biết *Go hỗ trợ interface?* Cuối cùng, tôi quyết định các bạn sẽ cho tôi biết phần nào của quyển sách quá hời hợt trong khi phần nào lại quá chi tiết.
+Khi tôi bắt đầu viết các đoạn và các chương đầu tiên, tôi biết rằng tôi sẽ không thể giả định tương tự thế. Cần bao nhiêu thời gian để mô tả về interface cho các độc giả về khái niệm này, trong khi những người khác sẽ chỉ cần biết *Go hỗ trợ interface?* Cuối cùng, tôi quyết định các bạn sẽ cho tôi biết phần nào của quyển sách quá hời hợt trong khi phần nào lại quá chi tiết.
 
 # Mở đầu
 
-Nếu bạn đang tìm cách để thử sử dụng Go, bạn nên xem qua [Go Playground](http://play.golang.org/). Nó cho phép người dùng chạy mã trực tiếp trên trình duyệt mà không cần phải cài đặt bất cứ thứ gì. Đây cũng là cách chung nhất để chia sẻ mã nguồn Go trên các trang cộng đồng như [Diễn đàn thảo luận của Go](https://groups.google.com/forum/#!forum/golang-nuts) và những nơi như StackOverflow.
+Nếu bạn đang muốn thử dùng Go, bạn nên xem qua [Go Playground](https://play.golang.org/). Nó cho phép người dùng chạy mã trực tiếp trên trình duyệt mà không cần phải cài đặt bất cứ thứ gì. Đây cũng là cách chung nhất để chia sẻ mã nguồn Go trên các trang cộng đồng như [Diễn đàn thảo luận của Go](https://groups.google.com/forum/#!forum/golang-nuts) và những nơi như StackOverflow.
 
 Cài đặt Go khá đơn giản. Bạn có thể cài đặt nó từ mã nguồn, nhưng tôi khuyên nên sử dụng các bộ được biên dịch sẵn từ trang chủ của Go. Khi bạn tải [Go từ trang chủ](https://golang.org/dl/), bạn sẽ thấy các bộ cài đặt cho nhiều nền tảng khác nhau.
 
 Trừ các mã đơn giản, Go được thiết kế để làm việc khi mã của bạn được đặt trong một workspace. Workspace là một thư mục gồm các thư mục con là `bin`, `pkg` và `src`. Bạn cũng có thể thiết lập workspace theo cách riêng của mình, nhưng cách này không được khuyến khích.
 
-Bình thường, tôi đặt các dự án của mình bên trọng thư mục `~/code`. Ví dụ, `~/code/blog` chứa blog của tôi. Với Go, workspace của tôi là `~/code/go` và blog viết bằng Go của tôi sẽ đặt tại `~/code/go/src/blog`.Để ngắn gọn, tôi sử dụng symbolic link để có thể truy xuất trực tiếp từ  `~/code/blog`:
-
-    ln -s ~/code/go/src/blog ~/code/blog
+Bình thường, tôi đặt các dự án của mình bên trọng thư mục `~/code`. Ví dụ, `~/code/blog` chứa blog của tôi. Với Go, workspace của tôi là `~/code/go` và blog viết bằng Go của tôi sẽ đặt tại `~/code/go/src/blog`.
 
 Tóm lại, tạo một thư mục `go` với một thư mục con `src` ở bất cứ chỗ nào bạn muốn đặt các project của bạn.
 
@@ -100,7 +95,7 @@ Ngôn ngữ biên dịch sẽ hướng tới chương trình chạy nhanh hơn v
 
 ## Kiểu dữ liệu tĩnh
 
-Kiểu dữ liệu tĩnh nghĩa là các biến phải được xác định kiểu (int, string, bool, []byte, ...). Trình biên dịch sẽ xác định các kiểu dữ liệu khi biến được khai báo, hoặc, trong nhiều trường hợp, cho phép trình biên dịch nội suy ra kiểu dữ liệu tương ứng (chúng ta sẽ xem ví dụ sau).
+Kiểu dữ liệu tĩnh nghĩa là các biến phải được xác định kiểu (int, string, bool, []byte, ...). Trình biên dịch sẽ xác định các kiểu dữ liệu khi biến được khai báo, trong nhiều trường hợp, cho phép trình biên dịch nội suy ra kiểu dữ liệu tương ứng (chúng ta sẽ xem ví dụ sau).
 
 Có rất nhiều điều cần nói về kiểu dữ liệu tĩnh, nhưng tôi tin rằng có một cách tốt hơn là đọc mã nguồn. Nếu bạn đang sử dụng kiểu dữ liệu động, bạn có thể thấy điều này phức tạp. Bạn không sai, nhưng ưu điểm đặc biệt là khi bạn đặt kiểu dữ liệu tĩnh với biên dịch. Cả hai tương ứng với nhau. Một trình biên dịch có thể phát hiện các vấn đề sai cú pháp đơn thuần cũng như thực hiện tối ưu hóa hơn nữa với kiểu dữ liệu tĩnh.
 
@@ -108,7 +103,7 @@ Có rất nhiều điều cần nói về kiểu dữ liệu tĩnh, nhưng tôi 
 
 Nói rằng một ngôn ngữ có cú pháp giống C có nghĩa là nếu bạn quen với một ngôn ngữ họ C khác như C, C++, Java, JavaScript and C#, thì bạn sẽ thấy Go rất quen thuộc. Ví dụ, `&&` được sử dụng như toán tử AND, `==` được sử dụng để so sánh bằng, `{` and `}` là hai kí tự bắt đầu và kết thúc, một mảng được đánh chỉ số từ 0.
 
-Cú pháp giống C có nghĩa là dấu chấm phẩy dùng để kết thúc một dòng và dấu ngoặc đơn ( ) được dùng khi mô tả các biểu thức điều kiện. Go không hỗ trợ cả hai, mặc dù ngoặc đơn vẫn còn được sử dụng để xác định quyền ưu tiên. Ví dụ, một lệnh `if` trông như thế này:
+Cú pháp giống C có nghĩa là dấu chấm phẩy dùng để kết thúc một dòng và dấu ngoặc đơn ( ) được dùng khi mô tả các biểu thức điều kiện. Go không hỗ trợ kiểu nào cả, mặc dù ngoặc đơn vẫn còn được sử dụng để xác định thứ tự ưu tiên. Ví dụ, một lệnh `if`:
 
 ```go
 if name == "Leto" {
@@ -116,10 +111,10 @@ if name == "Leto" {
 }
 ```
 
-Trong các trường hợp phức tạp, dấu ngoặc rất có ích:
+Trong trường hợp phức tạp, ta dùng dấu ngoặc:
 
 ```go
-if (name == "Goku" && power > 9000) || (name == "gohan" && power < 4000)  {
+if (name == "Goku" && power > 9000) || (name == "gohan" && power < 4000) {
   print("super Saiyan")
 }
 ```
@@ -198,7 +193,7 @@ func main() {
   if len(os.Args) != 2 {
     os.Exit(1)
   }
-  fmt.Println("It's over ", os.Args[1])
+  fmt.Println("It's over", os.Args[1])
 }
 ```
 
@@ -212,7 +207,7 @@ Chúng ta bây giờ đã dùng hai thư viện chuẩn của Go: `fmt` và `os`
 
 Bạn sẽ nhận thấy chúng ta thêm đằng trước của tên hàm là tên của gói, ví dụ, `fmt.Println`. Điều này khác so với nhiều ngôn ngữ khác. Chúng ta sẽ học thêm về các gói ở các chương sau. Bây giờ, cần biết làm thế nào để thêm một gói và sử dụng nó.
 
-Go là một ngôn ngữ  cho phép thêm các gói khá nghiêm ngặt. Nó sẽ không biên dịch nếu bạn import một gói nhưng lại không sử dụng. Thử chạy lệnh sau:
+Go là một ngôn ngữ quản lý gói khá nghiêm ngặt. Nó sẽ không biên dịch nếu bạn import một gói nhưng lại không sử dụng. Thử chạy lệnh sau:
 
 ```go
 package main
@@ -228,7 +223,7 @@ func main() {
 
 Bạn sẽ có 2 lỗi về `fmt` và `os` được import nhưng không được dùng. Bạn có bực mình không? Chắc chắn. Theo thời gian, bạn sẽ quen với nó (dù nó vẫn gây bực mình). Go quản lý nghiêm việc này do việc thêm các gói không dùng có thể khiến quá trình biên dịch bị chậm; thật sự thì tôi không đồng ý với điều này.
 
-Một điều khác cần lưu ý là Go có bộ thư viện chuẩn được tài liệu hóa khá đầy đủ. Bạn có thể vào <http://golang.org/pkg/fmt/#Println>  để học cách sử dụng `Println`. Bạn cũng có thể click vào tiêu đề để tham khảo mã nguồn, đến đầu trang để tham khảo các cách format của hàm.
+Một điều khác cần lưu ý là Go có bộ thư viện chuẩn được tài liệu hóa khá đầy đủ. Bạn có thể vào <https://golang.org/pkg/fmt/#Println>  để học cách sử dụng `Println`. Bạn cũng có thể click vào tiêu đề để tham khảo mã nguồn, đến đầu trang để tham khảo các cách format của hàm.
 
 Nếu bạn không có internet, bạn có thể đọc tài liệu tại máy tính của mình thông qua cách sau:
 
@@ -321,7 +316,7 @@ func main() {
 }
 ```
 
-Mặc dù `power` được sử dụng 2 lần với toán tử  `:=`, trình biên dịch sẽ không phát sinh lỗi ở lần thứ 2, nó phát hiện ra một biến khác, `name`, là một biến mới và sử dụng `:=` là hợp lệ. Tuy nhiên, bạn không thể đổi kiểu của biến `power`. Nó được khai báo (không tường minh) là một số nguyên (integer) và vì thế chỉ có thể được gán giá trị là số nguyên.
+Mặc dù `power` được sử dụng 2 lần với toán tử `:=`, trình biên dịch sẽ không phát sinh lỗi ở lần thứ 2, nó phát hiện ra một biến khác, `name`, là một biến mới và sử dụng `:=` là hợp lệ. Tuy nhiên, bạn không thể đổi kiểu của biến `power`. Nó được khai báo (không tường minh) là một số nguyên (integer) và vì thế chỉ có thể được gán giá trị là số nguyên.
 
 Bây giờ, thứ cuối cùng cần xem xét, giống như `import`, Go không cho phép bạn khai báo biến mà không sử dụng. Ví dụ:
 
@@ -369,7 +364,7 @@ if exists == false {
 }
 ```
 
-Điều này không phải chỉ là một quy ước. `_`, (blank identifier), đại diện cho giá trị trả về không được gán. Nó cho phép bạn sử dụng `_` mọi chố, bất kể kiểu dữ liệu trả về là gì.
+Điều này không phải chỉ là một quy ước. `_`, (blank identifier), đại diện cho giá trị trả về không được gán. Nó cho phép bạn sử dụng `_` mọi chỗ, bất kể kiểu dữ liệu trả về là gì.
 
 Cuối cùng, có một lưu ý trong khi khai báo hàm, nếu các tham số của hàm có cùng một kiểu dữ liệu, thì có thể dụng cú pháp dạng ngắn để viết:
 
@@ -660,7 +655,7 @@ fmt.Println(goku.Person.Name)
 
 Cả hai dòng lệnh trên đều in ra "Goku".
 
-Liệu kiểu tổ hợp (composition) có tốt hơn kế thừa (inheritance) không? Nhiều người nghĩ rằng đây là một cách tiện lợi và nhanh chóng để chia sẻ mã nguồn. Khi sử dụng kế thừa, When using inheritance, lớp của bạn được gắn với lớp cha, và hình thành một cách phân chia theo kiểu phân cấp chứ không phải theo chức năng.
+Liệu kiểu tổ hợp (composition) có tốt hơn kế thừa (inheritance) không? Nhiều người nghĩ rằng đây là một cách tiện lợi và nhanh chóng để chia sẻ mã nguồn. Khi sử dụng kế thừa, lớp của bạn được gắn với lớp cha, và hình thành một cách phân chia theo kiểu phân cấp chứ không phải theo chức năng.
 
 ### Overloading
 
@@ -765,28 +760,28 @@ Câu lệnh sẽ tạo một slice có kích thước là 0 nhưng có dung lư�
 ```go
 func main() {
   scores := make([]int, 0, 10)
-  scores[5] = 9033
+  scores[7] = 9033
   fmt.Println(scores)
 }
 ```
 
-Ví dụ đầu tiên bị lỗi. Tại sao? Vì kích thước của slice đang là 0. Đúng thế, dung lương của slice là 10 phần tử, nhưng chúng ta cần mở rộng slice một cách tường minh, trước khi truy cập vào các phần tử của nó. Một cách để thêm phần tử vào slice là dugf hàm `append`:
+Ví dụ đầu tiên bị lỗi. Tại sao? Vì kích thước của slice đang là 0. Dung lượng của slice là 10 phần tử, nhưng chúng ta cần mở rộng slice một cách tường minh, trước khi truy cập vào các phần tử của nó. Một cách để thêm phần tử vào slice là dùng hàm `append`:
 
 ```go
 func main() {
   scores := make([]int, 0, 10)
   scores = append(scores, 5)
-  fmt.Println(scores) // in ta [5]
+  fmt.Println(scores) // in phần tử [5]
 }
 ```
 
-Nhưng thay đổi này đã không đúng với ý tưởng ban đầu của đoạn mã. `Append` một phần tử vào slice có kích thước bằng 0 tức là gán giá trị cho phần tử đầu tiên của slice. Thực tế, chúng ta cần truy cập phần tử có index là 5. để làm điều này, cần thực hiện re-slice:
+Nhưng thay đổi này đã không đúng với ý tưởng ban đầu của đoạn mã. `Append` một phần tử vào slice có kích thước bằng 0 tức là gán giá trị cho phần tử đầu tiên của slice. Thực tế, chúng ta cần truy cập phần tử có chỉ số là 7. Để làm điều này, cần thực hiện re-slice:
 
 ```go
 func main() {
   scores := make([]int, 0, 10)
-  scores = scores[0:6]
-  scores[5] = 9033
+  scores = scores[0:8]
+  scores[7] = 9033
   fmt.Println(scores)
 }
 ```
@@ -923,7 +918,7 @@ func removeAtIndex(source []int, index int) []int {
 }
 ```
 
-Cuối cùng, giờ chúng ta đã biết về slice, chúng ta có thể tìm hiểu một hàm dựng sẵn khác: `copy`. `copy` là một trong những hàm làm nổi bật cách mà slice thay đổi nội dung của nó. Bình thường, hàm sẽ sao chép các giá trị từ mảng này qua mảng khác với 5 tham số: `source`, `sourceStart`, `count`, `destination` and `destinationStart`. Với slice, chỉ cần 2 tham số:
+Cuối cùng, bây giờ chúng ta đã biết về slice, chúng ta có thể tìm hiểu một hàm khác: `copy`. `copy` là một trong những hàm làm nổi bật cách mà slice thay đổi nội dung của nó. Bình thường, hàm sẽ sao chép các giá trị từ mảng này qua mảng khác với 5 tham số: `source`, `sourceStart`, `count`, `destination` and `destinationStart`. Với slice, chỉ cần 2 tham số:
 
 ```go
 import (
@@ -1116,7 +1111,7 @@ go run main/main.go
 
 ### Imports lồng nhau
 
-Khi bạn bắt đầu xây dựng một hệ thống phức tạp hơn, bạn có thể gặp tình trạng import lồng nhau (cyclical imports). Điều này xảy ra nếu gói A import gói B nhưng gói B lại import chính gói A ( một cách trực tiếp hoặc gián tiếp thông qua các gói khác). Trình biên dịch không cho phép điều này xảy ra.
+Khi bạn bắt đầu xây dựng một hệ thống phức tạp hơn, bạn có thể gặp tình trạng import lồng nhau (cyclical imports). Điều này xảy ra nếu gói A import gói B nhưng gói B lại import chính gói A (một cách trực tiếp hoặc gián tiếp thông qua các gói khác). Trình biên dịch không cho phép điều này xảy ra.
 
 Hãy thay đổi cấu trúc của hệ thống shopping và khiến nó bị lỗi.
 
@@ -1142,7 +1137,7 @@ func PriceCheck(itemId int) (float64, bool) {
 }
 ```
 
-Nếu bạn thử chạy đoạn mã trên, bạn sẽ gặp một loạt các lỗi từ `db/db.go` do `Item` chưa được định nghĩa. Điều đó là hiển nhiên. `Item` không còn nằm trong gói `db` nữa; nó đã được chuyển sang `shopping`. Chúng ta cần thay đổi một chút trong file `shopping/db/db.go` thành:
+Nếu bạn thử chạy đoạn mã trên, bạn sẽ gặp một loạt các lỗi từ `db/db.go` vì `Item` chưa được định nghĩa. Điều đó là hiển nhiên. `Item` không còn nằm trong gói `db` nữa; nó đã được chuyển sang `shopping`. Chúng ta cần thay đổi một chút trong file `shopping/db/db.go` thành:
 
 ```go
 package db
@@ -1222,7 +1217,7 @@ go get github.com/mattn/go-sqlite3
 
 `go get` sẽ tải file từ internet về workspace của bạn. Kiểm tra thư mục `$GOPATH/src`. Ngoài ra, cùng cấp với thư mục của `shopping`, bạn sẽ thấy một thư mục tên là `github.com`. Bên trong nó, bạn sẽ thấy thư mục `mattn`, trong đó lại chứa `go-sqlite3`.
 
-Chúng ta vừa nói về cách để import các gói thư viên trong workspace. Để sử dụng gói `go-sqlite3` vừa mới tải về, chúng ta làm như sau:
+Chúng ta vừa nói về cách để import các gói thư viện trong workspace. Để sử dụng gói `go-sqlite3` vừa mới tải về, chúng ta làm như sau:
 
 ```go
 import (
@@ -1272,7 +1267,7 @@ type Server struct {
 }
 ```
 
-hoặc một tham số của hàm  hoặc giá trị trả về:
+hoặc một tham số của hàm hoặc giá trị trả về:
 
 ```go
 func process(logger Logger) {
@@ -1318,7 +1313,7 @@ Trong chương này, chúng ta sẽ bàn về những tính năng đặc biệt 
 
 ## Xử lý lỗi
 
-Cách xử lý lõi trong Go là sử dụng giá trị trả về của hàm, mà không phải phát sinh ngoại lệ (exceptions). Xem hàm `strconv.Atoi`, nó nhận đối số đầu vào là một xâu và cố gắng chuyển nó thành một số nguyên:
+Cách xử lý lỗi trong Go là sử dụng giá trị trả về của hàm, mà không phải phát sinh ngoại lệ (exceptions). Xem hàm `strconv.Atoi`, nó nhận đối số đầu vào là một xâu và cố gắng chuyển nó thành một số nguyên:
 
 ```go
 package main
@@ -1419,7 +1414,7 @@ func main() {
 }
 ```
 
-Nếu bạn thử chạy đoạn mã trên, bạn sẽ nhận được một lỗi (file không tồn tại). Điểm nổi bật ở đây là cách mà `defer` hoạt động. Bất lệnh nào đi kèm với từ khóa `defer` sẽ được thực thi sau khi phương thức kết thúc. Điều này giúp bạn giải phóng tài nguyên gần như ở bất cứ chỗ nào nó được sử dụng xong, và bạn sẽ không phải quan tâm quá nhiều nếu hàm có nhiều điểm kết thúc.
+Nếu bạn thử chạy đoạn mã trên, bạn sẽ nhận được một lỗi (file không tồn tại). Điểm nổi bật ở đây là cách mà `defer` hoạt động. Bất cứ lệnh nào đi kèm với từ khóa `defer` sẽ được thực thi sau khi hàm (trong trường hợp này, là hàm `main()`) kết thúc. Điều này giúp bạn giải phóng tài nguyên gần như ở bất cứ chỗ nào nó được sử dụng xong, và bạn sẽ không phải quan tâm quá nhiều nếu hàm có nhiều điểm kết thúc.
 
 ## go fmt
 
@@ -1592,13 +1587,13 @@ Goroutine sẽ tiêu tốn tài nguyên một chút. Nhiều hàm goroutine có 
 
 Hơn nữa, sự phức tạp của cơ chế ánh xạ và lập lịch sẽ được ẩn đi. Chúng ta chỉ cần nói *các đoạn mã này nên chạy đồng thời* và để cho Go thực hiện chúng.
 
-Quay trở lại ví dụ trên, bạn sẽ thấy chúng ta có hàm `Sleep` trong một vài  mili giây. Bởi vì tiến trình chính kết thúc trước khi goroutine có cơ hội thực thi (hàm main không đợi cho đến khi tất cả các Goroutine kết thúc).
+Quay trở lại ví dụ trên, bạn sẽ thấy chúng ta có hàm `Sleep` trong một vài mili giây. Bởi vì tiến trình chính kết thúc trước khi goroutine có cơ hội thực thi (hàm main không đợi cho đến khi tất cả các Goroutine kết thúc).
 
 ## Đồng bộ hóa
 
-Tạo một goroutine khá bình thường, chính vì chúng cần ít tài nguyên nên ta có thể tạo ra nhiều tiến trình như vậy, tuy nhiên các đoạn mã đồng thời cần liên lạc và có thể phối hợp với nhsau. Để giải quyết vấn đề này, Go cung cấp `channels`. Trước khi tiếp cận `channels`, tôi thấy hiểu một chút về lý thuyết lập trình đồng thời là rất quan trọng.
+Tạo một goroutine khá bình thường, chính vì chúng cần ít tài nguyên nên ta có thể tạo ra nhiều tiến trình như vậy, tuy nhiên các đoạn mã đồng thời cần liên lạc và có thể phối hợp với nhau. Để giải quyết vấn đề này, Go cung cấp `channels`. Trước khi tiếp cận `channels`, tôi thấy hiểu một chút về lý thuyết lập trình đồng thời là rất quan trọng.
 
-Viết các đoạn mã đồng thời yêu cầu bạn quan tâm đén khi nào bạn đọc và khi nào ghi các giá trị. Theo cách khác, nó giống như lập trình mà không có bộ dọn rác. Nó yêu cầu bạn nghĩ về dữ liệu ở một góc độ mới, và luôn đề phòng những thao tác nguy hiểm. Ví dụ:
+Viết các đoạn mã đồng thời yêu cầu bạn quan tâm đến khi nào bạn đọc và khi nào ghi các giá trị. Theo cách khác, nó giống như lập trình mà không có bộ dọn rác. Nó yêu cầu bạn nghĩ về dữ liệu ở một góc độ mới, và luôn đề phòng những thao tác nguy hiểm. Ví dụ:
 
 ```go
 package main
@@ -1611,7 +1606,7 @@ import (
 var counter = 0
 
 func main() {
-  for i := 0; i < 2; i++ {
+  for i := 0; i < 20; i++ {
     go incr()
   }
   time.Sleep(time.Millisecond * 10)
@@ -1625,9 +1620,9 @@ func incr() {
 
 Bạn nghĩ kết quả hiển thị là gì?
 
-Nếu bạn nói kết quả là `1, 2` bạn vừa đúng lại vừa sai. Có thể bạn chạy đoạn mã trên, kết quả hiển thị cũng tương tự như thế. Tuy nhienem sự thật là hoạt động của chương trình không thể biết trước được. Tại sao? Bởi vì có thể có nhiều Goroutine (trường hợp này là hai) cùng ghi vào một biến `counter`, trong cùng một lúc. Hoặc, một Goroutine có thể đọc `counter` trong khi tiến trình còn lại đang ghi vào đó.
+Nếu bạn nói kết quả là `1, 2, ... 20` bạn vừa đúng lại vừa sai. Có thể bạn chạy đoạn mã trên, kết quả hiển thị cũng tương tự như thế. Tuy nhiên sự thật là hoạt động của chương trình không thể biết trước được. Tại sao? Bởi vì có thể có nhiều Goroutine (trường hợp này là hai) cùng ghi vào một biến `counter`, trong cùng một lúc. Hoặc, một Goroutine có thể đọc `counter` trong khi tiến trình còn lại đang ghi vào đó.
 
-Điều đó có nguy hiểm không? Có, tất nhiên là rất nguy hiểm. `counter++` giống như là 1 dòng code, nhưng nếu chia nhỏ ra, thì nó là nhiều dòng hợp ngữ -- thứ chạy trực tiếp trên máy tính của bạn. Trong ví dụ này, hầu hết các trường hợp đều chạy được. Tuy nhiên, một trường hợp có thể xảy ra là nếu 2 luồng cùng đọc lúc `counter` bằng `0` và bạn sẽ nhận được kết quả `1, 1`. Có nhiều tình huống còn tồi tệ hơn, ví dụ như hệ thống bị lỗi hoặc truy cập vào một vùng nhớ bất kì và thay dổi nó!
+Điều đó có nguy hiểm không? Có, tất nhiên là rất nguy hiểm. `counter++` giống như là 1 dòng code, nhưng nếu chia nhỏ ra, thì nó là nhiều dòng hợp ngữ -- thứ chạy trực tiếp trên máy tính của bạn. Nếu chạy ví dụ này, bạn sẽ thấy một hàng số được hiển thị, hoặc bị lặp, hoặc bị mất. Tuy nhiên, một trường hợp có thể xảy ra là nếu 2 luồng cùng đọc lúc `counter` bằng `0` và bạn sẽ nhận được kết quả `1, 1`. Có nhiều tình huống còn tồi tệ hơn, ví dụ như hệ thống bị lỗi hoặc truy cập vào một vùng nhớ bất kì và thay dổi nó!
 
 Chỉ có đọc dữ liệu từ một biến có thể thực hiện đồng thời mà vẫn an toàn. Bạn có thể đọc từ nhiều luồng khác nhau, nhưng nếu ghi dữ liệu thì bạn phải sử dụng đồng bộ hóa. Có nhiều cách để làm như thế, bao gồm dùng các hành động nguyên tố (atomic operation) dựa trên một vài lệnh đặc biệt của CPU. Tuy nhiên, cách tiếp cận chung nhất là sử dụng mutex:
 
@@ -1646,7 +1641,7 @@ var (
 )
 
 func main() {
-  for i := 0; i < 2; i++ {
+  for i := 0; i < 20; i++ {
     go incr()
   }
   time.Sleep(time.Millisecond * 10)
@@ -1687,7 +1682,7 @@ func main() {
 }
 ```
 
-Có nhiều cách để lập trình đồng thời hơn chúng ta vừa xem. Ví dụ, có một mutex khác được gọi là mutex đọc ghi (read-write mutex). Nó cho thấy có 2 chức năng có thể khóa: một để khóa trước khi đọc và một để khóa trước khi ghi. Sự phân biệt này cho phép nhiều tiến trình đọc đồng thời trong khi không cho phép bất cứ một tiến trình nào thực hiện ghi dữ liệu. Trong Go, `sync.RWMutex` là một khóa như vậy. Thêm vào đó, hàm  `Lock` và `Unlock` của `sync.Mutex`, cũng ch thấy có hai hàm `RLock` và `RUnlock` ; trong đó `R` có nghĩa là *Read*. Trong khi các mutex đọc ghi được sử dụng phổ biến, chúng à một gánh năng cho lập trình viên, : chúng ta phải quan tâm không chỉ là lúc nào thao tác với dữ liệu mà còn quan tâm tới phương thức truy cập là đọc hay ghi.
+Có nhiều cách để lập trình đồng thời hơn chúng ta vừa xem. Ví dụ, có một mutex khác được gọi là mutex đọc ghi (read-write mutex). Nó cho thấy có 2 chức năng có thể khóa: một để khóa trước khi đọc và một để khóa trước khi ghi. Sự phân biệt này cho phép nhiều tiến trình đọc đồng thời trong khi không cho phép bất cứ một tiến trình nào thực hiện ghi dữ liệu. Trong Go, `sync.RWMutex` là một khóa như vậy. Thêm vào đó, hàm `Lock` và `Unlock` của `sync.Mutex`, cũng ch thấy có hai hàm `RLock` và `RUnlock` ; trong đó `R` có nghĩa là *Read*. Trong khi các mutex đọc ghi được sử dụng phổ biến, chúng à một gánh năng cho lập trình viên, : chúng ta phải quan tâm không chỉ là lúc nào thao tác với dữ liệu mà còn quan tâm tới phương thức truy cập là đọc hay ghi.
 
 Hơn nữa, một phần của lập trình đồng thời không phải là truy cập tuần tự vào phần hẹp nhất của đoạn mã, nó còn là cách phối hợp giữa nhiều tiến trình với nhau. Ví dụ, tạm dựng hoạt động 10 mili giây giây không phải là một giải pháp hợp lý. Chuyện gì sẽ xảy ra nếu một tiến trình cần nhiều hơn 10 mili giây? Nếu nó cần ít hơn 10 mili giây, thì chúng ta đang lãng phí thời gian? Ngoài ra, thay vì đợi cho luông xử lý khác kết thúc, tôi muốn hiển thị *này, Tôi có dữ liệu mới để xử lý đây!* thì phải làm thế nào?
 
@@ -1763,7 +1758,7 @@ for {
 }
 ```
 
-Đây là toàn bộ mã nguồn để nó có thể chạy được:
+Đây là toàn bộ mã nguồn:
 
 ```go
 package main
@@ -1935,12 +1930,12 @@ Phải nói rằng, tôi vẫn sử dụng cách đồng bộ khá đơn giản 
 
 # Kết luận
 
-Có người mô tả Go là một ngôn ngữ *tẻ nhạt*. Tẻ nhạt vì nó dễ học, dễ viết và quan trọng là dễ đọc. Có thể, Tôi làm cho điều này còn tồi tệ hơn. Chúng ta *đã dành* ra 3 chương để nói về các kiểu dữ liệu, và cách khai báo các kiểu đó.
+Có người mô tả Go là một ngôn ngữ *tẻ nhạt*. Tẻ nhạt vì nó dễ học, dễ viết và quan trọng là dễ đọc. Chúng ta *đã dành* ra 3 chương để nói về các kiểu dữ liệu, và cách khai báo các kiểu đó.
 
 Nếu bạn có kiến thức về ngôn ngữ có kiểu dữ liệu tĩnh, hầu hết những gì chúng ta đã xem đều đầy đủ. Go cũng có con trỏ và slice trong Go chứng minh rằng không phải chỉ có Java hay C# mới làm được tính năng này.
 
-Nếu bạn chủ yếu sử dụng ngôn ngữ động, bạn sẽ cảm thấy hơi khác một chút. Nó đáng để tìm hiểu. Không ít trong số đó là cú pháp khai báo và khởi tọa khác nhau. Dù là một fan hâm mộ của Go, tôi thấy rằng hầu hết các cải tiến đều theo hướng đơn giản hóa. Tuy nhiên, một số thứ lại bị phức tạp hóa (như bạn chỉ có thể khai báo biến một lần và `:=` dùng khai báo biến) và một vài khái niệm cơ bản (như `new(X)` hoặc `&X{}` chỉ cấp phát bộ nhớ, nhưng slice, map và các channel cần nhiều khởi tạo hơn, `make`).
+Nếu bạn chủ yếu sử dụng ngôn ngữ động, bạn sẽ cảm thấy hơi khác một chút. Nó đáng để tìm hiểu. Không ít trong số đó là cú pháp khai báo và khởi tạo khác nhau. Dù là một fan hâm mộ của Go, tôi thấy rằng hầu hết các cải tiến đều theo hướng đơn giản hóa. Tuy nhiên, một số thứ lại bị phức tạp hóa (như bạn chỉ có thể khai báo biến một lần và `:=` dùng khai báo biến) và một vài khái niệm cơ bản (như `new(X)` hoặc `&X{}` chỉ cấp phát bộ nhớ, nhưng slice, map và các channel cần nhiều khởi tạo hơn, `make`).
 
 Ngoài ra, Go tạo ra một cách đơn giản nhưng hiệu quả để tổ chức mã nguồn. Interface, xử lý lỗi thông qua giá trị trả về, `defer` cho quản lý tài nguyên và một cách đơn giản tạo một cấu trúc tổ hợp.
 
-Cuối cùng, Go hỗ trợ lập trình đồng thời từ trong nhân. Khó có thể dùng một từ nào để mô tả về goroutine, ngoại trừ hiệu quả và đơn giản (đơn giản vì sử dụng thế nào cũng được). Đó là khái niệm trừu tượng hay. Các channel phức tạp hơn. Tôi luôn nghĩ rằng điều quan trọng là phải hiểu mô hình cơ bản trước khi sử dụng các lớp bao quanh ở mức cao. Tôi *nghĩ* học lập trình đồng thời không dùng channel sẽ rất tốt. Tuy nhiên, các channel đã được xây dựng sẵn, với tôi, không thấy giống như một khái niệm trừu tượng đơn giản. Tôi nói điều này bởi vì chúng thay đổi cách bạn viết và suy nghĩ về lập trình đồng thời. Nó giải quyết các vấn đề khó trong lập trình đồng thời, và chắc chắn  là thứ tuyệt vời.
+Cuối cùng, Go hỗ trợ sẵn cơ chế lập trình đồng thời. Khó có thể dùng một từ nào để mô tả về goroutine, ngoại trừ hiệu quả và đơn giản (đơn giản vì sử dụng thế nào cũng được). Đó là khái niệm trừu tượng. Các channel thì phức tạp hơn. Tôi luôn nghĩ rằng điều quan trọng là phải hiểu mô hình cơ bản trước khi sử dụng các lớp bao quanh ở mức cao. Tôi *nghĩ* học lập trình đồng thời không dùng channel sẽ rất tốt. Tuy nhiên, các channel đã được xây dựng sẵn, với tôi, không thấy giống như một khái niệm trừu tượng đơn giản. Tôi nói điều này bởi vì chúng thay đổi cách bạn viết và suy nghĩ về lập trình đồng thời. Nó giải quyết các vấn đề khó trong lập trình đồng thời, và chắc chắn là thứ tuyệt vời.
