@@ -8,12 +8,12 @@ You are free to copy, distribute, modify or display the book. However, I ask tha
 
 You can see the full text of the license at:
 
-<http://creativecommons.org/licenses/by-nc-sa/4.0/>
+<https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 ## Latest Version
 
 The latest source of this book is available at:
-<http://github.com/karlseguin/the-little-go-book>
+<https://github.com/karlseguin/the-little-go-book>
 
 # Introduction
 
@@ -41,15 +41,13 @@ As I think about the paragraphs and chapters that lay ahead, I know that I won't
 
 # Getting Started
 
-If you're looking to play a little with Go, you should check out the [Go Playground](http://play.golang.org/) which lets you run code online without having to install anything. This is also the most common way to share Go code when seeking help in [Go's discussion forum](https://groups.google.com/forum/#!forum/golang-nuts) and places like StackOverflow.
+If you're looking to play a little with Go, you should check out the [Go Playground](https://play.golang.org/) which lets you run code online without having to install anything. This is also the most common way to share Go code when seeking help in [Go's discussion forum](https://groups.google.com/forum/#!forum/golang-nuts) and places like StackOverflow.
 
 Installing Go is straightforward. You can install it from source, but I suggest you use one of the pre-compiled binaries. When you [go to the download page](https://golang.org/dl/), you'll see installers for various platforms. Let's avoid these and learn how to set up Go ourselves. As you'll see, it isn't hard.
 
 Except for simple examples, Go is designed to work when your code is inside a workspace. The workspace is a folder composed of `bin`, `pkg` and `src` subfolders. You might be tempted to force Go to follow your own style - don't.
 
-Normally, I put my projects inside of `~/code`. For example, `~/code/blog` contains my blog. For Go, my workspace is `~/code/go` and my Go-powered blog would be in `~/code/go/src/blog`. Since that's a lot to type, I use a symbolic link to make it accessible via `~/code/blog`:
-
-    ln -s ~/code/go/src/blog ~/code/blog
+Normally, I put my projects inside of `~/code`. For example, `~/code/blog` contains my blog. For Go, my workspace is `~/code/go` and my Go-powered blog would be in `~/code/go/src/blog`.
 
 In short, create a `go` folder with a `src` subfolder wherever you expect to put your projects.
 
@@ -198,7 +196,7 @@ func main() {
   if len(os.Args) != 2 {
     os.Exit(1)
   }
-  fmt.Println("It's over ", os.Args[1])
+  fmt.Println("It's over", os.Args[1])
 }
 ```
 
@@ -228,7 +226,7 @@ func main() {
 
 You should get two errors about `fmt` and `os` being imported and not used. Can this get annoying? Absolutely. Over time, you'll get used to it (it'll still be annoying though). Go is strict about this because unused imports can slow compilation; admittedly a problem most of us don't have to this degree.
 
-Another thing to note is that Go's standard library is well documented. You can head over to <http://golang.org/pkg/fmt/#Println> to learn more about the `Println` function that we used. You can click on that section header and see the source code. Also, scroll to the top to learn more about Go's formatting capabilities.
+Another thing to note is that Go's standard library is well documented. You can head over to <https://golang.org/pkg/fmt/#Println> to learn more about the `Println` function that we used. You can click on that section header and see the source code. Also, scroll to the top to learn more about Go's formatting capabilities.
 
 If you're ever stuck without internet access, you can get the documentation running locally via:
 
@@ -767,7 +765,7 @@ To better understand the interplay between length and capacity, let's look at so
 ```go
 func main() {
   scores := make([]int, 0, 10)
-  scores[5] = 9033
+  scores[7] = 9033
   fmt.Println(scores)
 }
 ```
@@ -782,13 +780,13 @@ func main() {
 }
 ```
 
-But that changes the intent of our original code. Appending to a slice of length 0 will set the first element. For whatever reason, our crashing code wanted to set the element at index 5. To do this, we can re-slice our slice:
+But that changes the intent of our original code. Appending to a slice of length 0 will set the first element. For whatever reason, our crashing code wanted to set the element at index 7. To do this, we can re-slice our slice:
 
 ```go
 func main() {
   scores := make([]int, 0, 10)
-  scores = scores[0:6]
-  scores[5] = 9033
+  scores = scores[0:8]
+  scores[7] = 9033
   fmt.Println(scores)
 }
 ```
@@ -1418,7 +1416,7 @@ func main() {
 }
 ```
 
-If you try to run the above code, you'll probably get an error (the file doesn't exist). The point is to show how `defer` works. Whatever you `defer` will be executed after the method returns, even if it does so violently. This lets you release resources near where it’s initialized and takes care of multiple return points.
+If you try to run the above code, you'll probably get an error (the file doesn't exist). The point is to show how `defer` works. Whatever you `defer` will be executed after the enclosing function (in this case `main()`) returns, even if it does so violently. This lets you release resources near where it’s initialized and takes care of multiple return points.
 
 ## go fmt
 
@@ -1610,7 +1608,7 @@ import (
 var counter = 0
 
 func main() {
-  for i := 0; i < 2; i++ {
+  for i := 0; i < 20; i++ {
     go incr()
   }
   time.Sleep(time.Millisecond * 10)
@@ -1624,9 +1622,9 @@ func incr() {
 
 What do you think the output will be?
 
-If you think the output is `1, 2` you're both right and wrong. It's true that if you run the above code, you'll very likely get that output. However, the reality is that the behavior is undefined. Why? Because we potentially have multiple (two in this case) goroutines writing to the same variable, `counter`, at the same time. Or, just as bad, one goroutine would be reading `counter` while another writes to it.
+If you think the output is `1, 2, ... 20` you're both right and wrong. It's true that if you run the above code, you'll sometimes get that output. However, the reality is that the behavior is undefined. Why? Because we potentially have multiple (two in this case) goroutines writing to the same variable, `counter`, at the same time. Or, just as bad, one goroutine would be reading `counter` while another writes to it.
 
-Is that really a danger? Yes, absolutely. `counter++` might seem like a simple line of code, but it actually gets broken down into multiple assembly statements -- the exact nature is dependent on the platform that you're running. It's true that, in this example, the most likely case is things will run just fine. However, another possible outcome would be that they both see `counter` when its equal to `0` and you get an output of `1, 1`. There are worse possibilities, such as system crashes or accessing an arbitrary piece of data and incrementing it!
+Is that really a danger? Yes, absolutely. `counter++` might seem like a simple line of code, but it actually gets broken down into multiple assembly statements -- the exact nature is dependent on the platform that you're running. If you run this example, you'll see that very often the numbers are printed in a weird order, and/or numbers are duplicated/missing. There are worse possibilities too, such as system crashes or accessing an arbitrary piece of data and incrementing it!
 
 The only concurrent thing you can safely do to a variable is to read from it. You can have as many readers as you want, but writes need to be synchronized. There are various ways to do this, including using some truly atomic operations that rely on special CPU instructions. However, the most common approach is to use a mutex:
 
@@ -1645,7 +1643,7 @@ var (
 )
 
 func main() {
-  for i := 0; i < 2; i++ {
+  for i := 0; i < 20; i++ {
     go incr()
   }
   time.Sleep(time.Millisecond * 10)
