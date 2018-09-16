@@ -14,8 +14,11 @@ The book is freely distributed under the  [Attribution-NonCommercial-ShareAlike 
 ## Translations ##
 
 * [Spanish](https://github.com/raulexposito/the-little-go-book/tree/master/es) by Raúl Expósito
-* [Chinese](https://github.com/songleo/the-little-go-book_ZH_CN) by [songleo](https://github.com/songleo)
-* [Vietnamese](https://github.com/quangnh89/the-little-go-book/blob/master/vi/readme.md) by [Quang Nguyễn](https://github.com/quangnh89)
+* [Chinese](https://github.com/songleo/the-little-go-book_ZH_CN) by Songleo
+* [Traditional Chinese](https://github.com/kevingo/the-little-go-book) by KevinGo
+* [Vietnamese](https://github.com/quangnh89/the-little-go-book/blob/master/vi/readme.md) by Quang Nguyễn
+* [Italian](https://github.com/francescomalatesta/the-little-go-book-ita) by Francesco Malatesta
+* [Russian](https://github.com/sefus/the-little-go-book/blob/master/ru/go.md) by Roman Dolgopolov
 
 ## Formats ##
 The book is written in [Markdown](http://daringfireball.net/projects/markdown/) and converted to PDF using [Pandoc](http://johnmacfarlane.net/pandoc/).

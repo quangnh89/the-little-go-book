@@ -601,7 +601,7 @@ gohan := &Saiyan{
 
 ## Composition
 
-Go supports composition, which is the act of including one structure into another. In some languages, this is called a trait or a mixin. Languages that don't have an explicit composition mechanism can always do it the long way. In Java:
+Go supports composition, which is the act of including one structure into another. In some languages, this is called a trait or a mixin. Languages that don't have an explicit composition mechanism can always do it the long way. In Java, there's the possibility to extend structures with *inheritance* but, in a scenario where this is not an option, a mixin would be written like this:
 
 ```java
 public class Person {
@@ -814,7 +814,7 @@ func main() {
 }
 ```
 
-The initial capacity of `scores` is 5. In order to hold 20 values, it'll have to be expanded 3 times with a capacity of 10, 20 and finally 40.
+The initial capacity of `scores` is 5. In order to hold 25 values, it'll have to be expanded 3 times with a capacity of 10, 20 and finally 40.
 
 As a final example, consider:
 
@@ -913,9 +913,10 @@ The above is the start of an efficient way to remove a value from an unsorted sl
 func main() {
   scores := []int{1, 2, 3, 4, 5}
   scores = removeAtIndex(scores, 2)
-  fmt.Println(scores)
+  fmt.Println(scores) // [1 2 5 4]
 }
 
+// won't preserve order
 func removeAtIndex(source []int, index int) []int {
   lastIndex := len(source) - 1
   //swap the last value and the value we want to remove
@@ -1745,8 +1746,8 @@ To use this, the first thing we'd do is start some workers:
 
 ```go
 c := make(chan int)
-for i := 0; i < 4; i++ {
-  worker := Worker{id: i}
+for i := 0; i < 5; i++ {
+  worker := &Worker{id: i}
   go worker.process(c)
 }
 ```
