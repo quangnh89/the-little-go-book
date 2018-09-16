@@ -10,7 +10,7 @@ Bạn có thể đọc toàn bộ nội dung của bản quyền tại địa ch
 ## Phiên bản mới nhất
 
 Phên bản mới nhất của sách có thể đọc tại đây:
-<http://github.com/karlseguin/the-little-go-book>
+<https://github.com/karlseguin/the-little-go-book>
 
 # Giới thiệu
 Tôi quan tâm việc học ngôn ngữ mới. Một mặt, ngôn ngữ rất gần với những gì chúng ta làm, ngay cả những thay đổi nhỏ có thể có tác động nhìn thấy được. Một thay đổi nhỏ sẽ ảnh hưởng tới cách bạn lập trình và cách bạn suy nghĩ trong các ngôn ngữ khác. Ngôn ngữ mới được cài tiến. Học từ khoá mới, hệ thống kiểu dữ liệu, phong cách viết mã cũng như các thư viện mới, các cộng đồng và mô hình được xem là một công việc không nhỏ. So với tất cả mọi thứ khác chúng ta phải học, học ngôn ngữ mới thường được xem là rất mất thời gian.
@@ -596,7 +596,7 @@ gohan := &Saiyan{
 
 ## Composition
 
-Go hỗ trợ tổ hợp hóa (composition), cho phép một cấu trúc có thể chứa một cấu trúc khác. Trong một số ngôn ngữ, nó được gọi là thuộc tính, hoặc kiểu hỗn hợp. Các ngôn ngữ không có composition tường minh có thể mô tả nó theo nhiều kiểu khác nhau. Trong Java:
+Go hỗ trợ tổ hợp hóa (composition), cho phép một cấu trúc có thể chứa một cấu trúc khác. Trong một số ngôn ngữ, nó được gọi là thuộc tính, hoặc kiểu hỗn hợp. Các ngôn ngữ không có composition tường minh có thể mô tả nó theo nhiều kiểu khác nhau. Trong Java, người ta thường xử dụng *kế thừa* (inheritance) để mở rộng một cấu trúc có sẵn:
 
 ```java
 public class Person {
@@ -808,7 +808,7 @@ func main() {
 }
 ```
 
-Dung lượng ban đầu của `scores` là 5. Để lưu được 20 giá trị, nó phải được mở rộng 3 lần với dung lượng tăng lần lượt là 10, 20 và cuối cùng là 40.
+Dung lượng ban đầu của `scores` là 5. Để lưu được 25 giá trị, nó phải được mở rộng 3 lần với dung lượng tăng lần lượt là 10, 20 và cuối cùng là 40.
 
 Ví dụ cuối cùng:
 
@@ -907,9 +907,10 @@ scores = scores[:len(scores)-1]
 func main() {
   scores := []int{1, 2, 3, 4, 5}
   scores = removeAtIndex(scores, 2)
-  fmt.Println(scores)
+  fmt.Println(scores) // [1 2 5 4]
 }
 
+// không theo thứ tự
 func removeAtIndex(source []int, index int) []int {
   lastIndex := len(source) - 1
   //chuyển chỗ giá trị cuối cùng và giá trị chúng ta muốn xóa
@@ -1743,8 +1744,8 @@ Worker rất đơn giản. Nó chờ đợi cho đến khi dữ liệu sẵn sà
 
 ```go
 c := make(chan int)
-for i := 0; i < 4; i++ {
-  worker := Worker{id: i}
+for i := 0; i < 5; i++ {
+  worker := &Worker{id: i}
   go worker.process(c)
 }
 ```
